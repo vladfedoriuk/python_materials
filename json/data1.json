@@ -1,0 +1,20 @@
+{
+    "array": [
+        1,
+        2,
+        3,
+        "a",
+        null
+    ],
+    "boolean": true,
+    "example": -1,
+    "none": null,
+    "number": 1,
+    "object": {
+        "key": [
+            "value",
+            false
+        ]
+    },
+    "string": "abc"
+}

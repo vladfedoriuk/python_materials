@@ -1,0 +1,10 @@
+{
+  "string": "abc",
+  "number": 1,
+  "boolean": true,
+  "none": null,
+  "array": [1, 2, 3, "a", null],
+  "object": {
+    "key": ["value", false]
+  }
+}

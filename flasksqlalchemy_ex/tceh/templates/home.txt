@@ -1,0 +1,19 @@
+{% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        Messages:
+            {% for category, message in messages %}
+                Category: {{ category }}
+                Message: {{ message }}
+            {% endfor %}
+        The end of the messages
+    {% endif %}
+{% endwith %}
+
+All Posts:
+{% for item in posts %}
+    Title: {{ item.title }}
+    Author: {{ item.user.email }}/{{ item.user.username }}/{{ item.user_id }}
+    Date: {{ item.date_created }}
+    Constent: {{ item.content }}
+{% endfor %}
+End of the posts
