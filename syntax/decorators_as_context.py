@@ -1,5 +1,5 @@
 import contextlib
-
+from functools import wraps
 
 class Tag(contextlib.ContextDecorator):
     def __init__(self, tag):

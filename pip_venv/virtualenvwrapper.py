@@ -41,5 +41,17 @@
 # to start working on in a virtualenv:
 """
     workon <name of virtualenv>
+"""
+
+# pip install virtualenvwrapper
+# mkvirtualenv inprogress -p python3.8
+# git clone git@gitlab.deployed.pl:inprogress/inprogress.git
+# cd inprogress
+# cp inprogress/settings/local.py inprogress/settings/local_settings.py
+# echo "cd $(pwd)" >> ~/.virtualenvs/inprogress/bin/postactivate
+# pip install -r requirements/local.txt
+# pre-commit install
+# pre-commit install --hook-type commit-msg
+
 
 

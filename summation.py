@@ -24,11 +24,9 @@ class Form(object):
             self.__setattr__("nums", list(map(int, self.data.split())))
         except ValueError or TypeError:
             return False
-        if len(list(filter(lambda x: x >= 0, getattr(self, "nums")))) != len(
+        return len(list(filter(lambda x: x >= 0, getattr(self, "nums")))) == len(
             getattr(self, "nums")
-        ):
-            return False
-        return True
+        )
 
     def sum(self):
         return sum(getattr(self, "nums"))
